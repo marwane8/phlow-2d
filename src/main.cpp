@@ -1,6 +1,6 @@
 
-#include "phlow_util.h"
-#include "world.h"
+#include "phlow_util.hpp"
+#include "world.hpp"
 #include "raylib-cpp.hpp"
 
 int main(int argc, char* argv[]){

@@ -1,5 +1,5 @@
-#include "phlow_util.h"
-#include "dynamics.h"
+#include "phlow_util.hpp"
+#include "dynamics.hpp"
 
 #include <iostream>
 #include <gtest/gtest.h>

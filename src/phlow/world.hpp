@@ -1,8 +1,8 @@
 #ifndef  INCLUDE_WORLD
 #define  INCLUDE_WORLD
 
-#include "phlow_util.h"
-#include "dynamics.h"
+#include "phlow_util.hpp"
+#include "dynamics.hpp"
 #include <vector>
 
 namespace phlow {

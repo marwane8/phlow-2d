@@ -1,9 +1,9 @@
 add_library( phlow_lib
     world.cpp
-    world.h
+    world.hpp
     dynamics.cpp
-    dynamics.h
-    phlow_util.h
+    dynamics.hpp
+    phlow_util.hpp
 )
 
 target_link_libraries( phlow_lib PUBLIC

@@ -1,7 +1,7 @@
 #ifndef INCLUDE_DYNAMICS
 #define INCLUDE_DYNAMICS
 
-#include "phlow_util.h"
+#include "phlow_util.hpp"
 
 namespace phlow {   
 
