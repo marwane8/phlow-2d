@@ -2,9 +2,7 @@ add_library( phlow_lib
     world.cpp
     dynamics.cpp
     collisions.cpp
-    world.hpp
-    dynamics.hpp
-    collisions.hpp
+    vector2d.cpp
     phlow_util.hpp
 )
 

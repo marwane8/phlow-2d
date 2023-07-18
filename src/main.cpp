@@ -11,7 +11,7 @@ int main(int argc, char* argv[]){
 
     SetTargetFPS(phlow::FPS);
 
-    phlow::Ball ball1 = {100,100,10,10,0};
+    phlow::Ball ball1 = {100,100,10,20,10};
     phlow::Ball ball2 = {300,100,10,-10,0};
 
     //initalize world

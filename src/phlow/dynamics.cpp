@@ -20,9 +20,9 @@ namespace phlow {
         int topBound = 0 + ball.radius;
         int bottomBound = SCREEN_HEIGHT - ball.radius;
 
-        // ball.vy += GRAVIT;Y
-        ball.xx += ball.vx * 2/FPS;
-        ball.xy += ball.vy * 2/FPS; 
+        ball.vy += GRAVITY;
+        ball.xx += ball.vx * 6/FPS;
+        ball.xy += ball.vy * 6/FPS; 
 
         if (ball.xx <= leftBound || ball.xx >= rightBound) {
             ball.vx = -ball.vx * (1 - X_FRICTION); 
