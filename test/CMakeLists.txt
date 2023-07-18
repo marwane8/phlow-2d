@@ -1,4 +1,5 @@
 add_executable( phlow_tests
+    test_dynamics.cpp
     test_world.cpp
 )
 
