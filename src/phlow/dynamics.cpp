@@ -6,6 +6,13 @@ namespace phlow {
     Dynamics::Dynamics() {
     }
 
+
+    void Dynamics::step(std::vector<Ball>& objects) {
+        for (auto &ball : objects) {
+            update(ball);
+        }
+    }
+
     void Dynamics::update(Ball &ball) {
 
         int leftBound = 0 + ball.radius; 

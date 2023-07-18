@@ -2,6 +2,8 @@
 #define INCLUDE_PHLOW_UTIL
 
 
+#include <cmath>
+
 namespace phlow {   
 
 const int SCREEN_HEIGHT = 800;
@@ -15,6 +17,9 @@ typedef struct Ball {
     float vx;                // Velocity x component
     float vy;                // Velocity y component
 } Ball;
+
+
+
 
 } // namespace phlow
 #endif

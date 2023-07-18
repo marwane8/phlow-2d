@@ -2,7 +2,8 @@
 #include "world.hpp"
 namespace phlow {
 
-    World::World() : m_dynamics() 
+    World::World()
+        : m_dynamics(),m_collisons()
     {}
 
     void World::add_object(Ball ball) {
@@ -14,9 +15,8 @@ namespace phlow {
     }
 
     void World::step() {
-        for (auto &ball : m_objects) {
-            m_dynamics.update(ball);
-        }
+        m_dynamics.step(m_objects);
+        m_collisons.step(m_objects);
     }
     
 } // namespace phlow

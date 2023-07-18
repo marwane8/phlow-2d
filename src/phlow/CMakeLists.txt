@@ -1,8 +1,10 @@
 add_library( phlow_lib
     world.cpp
-    world.hpp
     dynamics.cpp
+    collisions.cpp
+    world.hpp
     dynamics.hpp
+    collisions.hpp
     phlow_util.hpp
 )
 
