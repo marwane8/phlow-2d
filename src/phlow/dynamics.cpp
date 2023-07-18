@@ -1,3 +1,4 @@
+#include "phlow_util.h"
 #include "dynamics.h"
 
 namespace phlow {
@@ -8,13 +9,13 @@ namespace phlow {
     void Dynamics::update(Ball &ball) {
 
         int leftBound = 0 + ball.radius; 
-        int rightBound = phlow::SCREEN_WIDTH - ball.radius; 
+        int rightBound = SCREEN_WIDTH - ball.radius; 
         int topBound = 0 + ball.radius;
-        int bottomBound = phlow::SCREEN_HEIGHT - ball.radius;
+        int bottomBound = SCREEN_HEIGHT - ball.radius;
 
-        ball.vy += GRAVITY;
-        ball.xx += ball.vx;
-        ball.xy += ball.vy; 
+        // ball.vy += GRAVIT;Y
+        ball.xx += ball.vx * 2/FPS;
+        ball.xy += ball.vy * 2/FPS; 
 
         if (ball.xx <= leftBound || ball.xx >= rightBound) {
             ball.vx = -ball.vx * (1 - X_FRICTION); 

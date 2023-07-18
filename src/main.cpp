@@ -10,14 +10,15 @@ int main(int argc, char* argv[]){
     raylib::Color foreground = RED;
     raylib::Color background = RAYWHITE;
 
-    SetTargetFPS(60);
+    SetTargetFPS(phlow::FPS);
 
-    phlow::Ball ball1 = {100,100,10,10,};
+    phlow::Ball ball1 = {100,100,10,10,0};
+    phlow::Ball ball2 = {300,100,10,-10,0};
 
     //initalize world
     phlow::World world = phlow::World();
     world.add_object(ball1);
-    int frameCounter = 0;
+    world.add_object(ball2);
         
     // Main game loop
     while (!window.ShouldClose()) {    // Detect window close button or ESC key
@@ -36,7 +37,6 @@ int main(int argc, char* argv[]){
         }
         EndDrawing();
         //----------------------------------------------------------------------------------
-        frameCounter++;
     }
 
     return 0;

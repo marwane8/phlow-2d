@@ -6,8 +6,8 @@
 namespace phlow {   
 
 
-constexpr int GRAVITY = 3;
-constexpr double X_FRICTION = 0.3;
+constexpr int GRAVITY = 4;
+constexpr double X_FRICTION = 0.1;
 constexpr double Y_FRICTION = 0.1;
 
 class Dynamics {

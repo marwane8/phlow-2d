@@ -6,6 +6,7 @@ namespace phlow {
 
 const int SCREEN_HEIGHT = 800;
 const int SCREEN_WIDTH = 450;
+const int FPS = 60;
 
 typedef struct Ball {
     float xx;                // Position x component
