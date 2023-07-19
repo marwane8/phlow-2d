@@ -19,6 +19,7 @@ public:
     std::vector<Ball>& objects();
     void step();
     void add_object(Ball ball);
+    int ball_count();
 };
     
 } // namespace phlow

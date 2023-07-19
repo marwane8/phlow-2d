@@ -29,6 +29,14 @@ int main(int argc, char* argv[]){
         BeginDrawing();
         {
             window.ClearBackground(background);
+            window.DrawFPS(10,10);
+            DrawText("Ball Counter", phlow::SCREEN_WIDTH-125,10,18,raylib::RED);
+            std::string counter = std::to_string(world.ball_count());
+            DrawText(counter, phlow::SCREEN_WIDTH-90,30,24,raylib::RED);
+            if(IsKeyDown(KEY_SPACE)){
+                phlow::Ball new_ball = {100,80,10,10,0};
+                world.add_object(new_ball);
+            }
 
             for(auto &ball : world.objects()){
                 DrawCircleV({ball.xx,ball.xy}, ball.radius, raylib::BLACK);

@@ -6,6 +6,10 @@ namespace phlow {
         : m_dynamics(),m_collisons()
     {}
 
+    int World::ball_count() {
+        return m_objects.size();
+    }
+
     void World::add_object(Ball ball) {
         m_objects.push_back(ball);
     }
